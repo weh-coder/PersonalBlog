@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客主页</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./Js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <audio id="music" autoplay>
+        <source src="./mp3/Victory.mp3" type="audio/mp3">
+    </audio>
+    <div id="update">
+        <div class="big"></div>
+        <div class="small"></div>
+    </div>
+    <div id="wrap" class="clearfix">
+        <header class="head">
+            <div class="logo">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+            </div>
+            <div class="switch" onclick="play()" title="背景音乐">
+                <span id="s1"></span>
+                <span id="s2"></span>
+                <span id="s3"></span>
+                <span id="s4"></span>
+                <span id="s5"></span>
+            </div>
+            <ul class="venus-menu clearfix">
+                <li class="active menu-item">
+                    <a href="./home.html" title="首页">首页</a>
+                </li>
+                <li class="menu-item">
+                    <a title="生活专栏">生活专栏</a>
+                    <ul class="downlist">
+                        <li>
+                            <a href="plan.html" target="_self" title="个人计划">个人计划</a>
+                        </li>
+                        <li>
+                            <a href="study.html" target="_self" title="学习笔记">学习笔记</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a title="娱乐分享">娱乐分享</a>
+                    <ul class="downlist">
+                        <li>
+                            <a href="technology.html" target="_self" title="科技魅力">科技魅力</a>
+                        </li>
+                        <li>
+                            <a href="music.html" target="_self" title="音频分享">音频分享</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a title="个人空间">个人空间</a>
+                    <ul class="downlist">
+                        <li><a href="blog.html" target="_self" title="博文">博文</a></li>
+                        <li>
+                            <a href="photo.html" target="_self" title="图片浏览">图片浏览</a>
+                        </li>
+                        <li><a href="guestbook.html" target="_self" title="留言访问">留言访问</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="about.html" title="关于">关于</a>
+                </li>
+            </ul>
+            <div class="nth-right">
+                <form class="search" action="http://www.baidu.com/baidu" method="get" target="_blank">
+                    <input type="text" name="word" />
+                    <button>百度一下</button>
+                </form>
+                <div class="quit">
+                    <img src="./images/quit.jfif" alt="" class="quit-logo" title="退出">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <ul>
+                <li class="content-item active">
+
+                    <div id="active-map">
+                        <ul id="lop">
+                            <li class="kid1"><img src="./images/C.jfif" alt=""></li>
+                            <li class="kid2"><img src="./images/Java.jfif" alt=""></li>
+                            <li class="kid3"><img src="./images/Js.jfif" alt=""></li>
+                            <li class="kid4"><img src="./images/jiegou.jfif" alt=""></li>
+                        </ul>
+                        <div id="leftlog"></div>
+                        <div id="rightlog"></div>
+                        <ol class="sub">
+                            <li class="current" number="0"></li>
+                            <li number="1"></li>
+                            <li number="2"></li>
+                            <li number="3"></li>
+                        </ol>
+                    </div>
+
+                    <div class="content-add">
+                        <div class="content1">
+                            <p>快捷菜单</p>
+                            <ul class="list-item" id="menu-min">
+                                <li>
+                                    <a href="study.html">学习笔记</a>
+                                </li>
+                                <li>
+                                    <a href="photo.html">图片浏览</a>
+                                </li>
+                                <li>
+                                    <a href="technology.html">科技魅力</a>
+                                </li>
+                                <li><a href="music.html">音频分享</a>
+                                </li>
+                            </ul>
+                            <div class="line"></div>
+                            <p>热门推荐</p>
+                            <ul class="list-item" id="menu-list1">
+                                <li>
+                                    <a href="https://blog.csdn.net/weixin_43970890/article/details/121035614">企业上云后资源容量如何规划和实施</a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.csdn.net/lildkdkdkjf/article/details/120929922">数据可视化+爬虫：基于Echarts+Python 实现的动态实时大屏范例 - 行业搜索指数排行榜</a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.csdn.net/dyw3390199/article/details/120630597">Echarts雷达图和常用配置</a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.csdn.net/qq_41133986/article/details/108887794">吴恩达机器学习笔记总结</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="showTime"></div>
+                        <div class="content2">
+                            <p>热门文章</p>
+                            <ul class="list-item" id="menu-list2">
+                                <li><a href="">C语言课程设计</a>
+                                </li>
+                                <li><a href="">Java课程设计</a>
+                                </li>
+                                <li><a href="">数据库课程设计</a>
+                                </li>
+                                <li><a href="">更多</a>
+                                </li>
+                            </ul>
+                            <div class="line"></div>
+                            <p>分类专栏</p>
+                            <ul class="list-item" id="menu-list3">
+                                <li>
+                                    <a href="">Java</a>
+                                </li>
+                                <li>
+                                    <a href="">C语言</a>
+                                </li>
+                                <li>
+                                    <a href="">前端</a>
+                                </li>
+                                <li class="mapleft"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-item item1">
+                    <div class="block-list1">
+                        发明是百分之一的灵感加上百分之九十九的血汗。
+                        <p>——爱迪生（美国）</p>
+                    </div>
+                    <div class="block-list2">
+                        <ul class="block-left">
+                            <li>学习计划</li>
+                            <a href="plan.html"><img src="./images/play1.jpg" alt=""></a>
+                            <li>人生计划
+                            </li>
+                            <a href="plan.html"><img src="./images/play2.jpg" alt=""></a>
+                        </ul>
+                        <ul class="block-mid">
+                            <li>【学习笔记】html+css3</li>
+                            <a href="study.html"><img src="./images/htmlnote.webp" alt=""></a>
+                            <li>【学习笔记】JavaScript </li>
+                            <a href="study.html"><img src="./images/jsnote.jfif" alt=""></a>
+                            <li>【学习笔记】Java</li>
+                            <a href="study.html"><img src="./images/javanote.jfif" alt=""></a>
+                            <li>【个人笔记】前端开发</li>
+                            <a href="study.html"><img src="./images/Js.jfif" alt=""></a>
+                        </ul>
+                        <ul class="block-right">
+                            <li>黑马程序员pink老师前端入门教程</li>
+                            <a href="https://www.bilibili.com/video/BV14J4114768">
+                                <img src="./images/source1.jpg" alt="">
+                            </a>
+                            <li>黑马程序员SpringBoot2全套视频教程
+                            </li>
+                            <a href="https://www.bilibili.com/video/BV15b4y1a7yG">
+                                <img src="./images/source2.jpg" alt="">
+                            </a>
+                            <li>2021高薪版全套前端Vue2+Vue3</li>
+                            <a href="https://www.bilibili.com/video/BV18U4y1J7UP">
+                                <img src="./images/source3.jpg" alt="">
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content-item item2">
+                    <div class="block-list3">
+                        <ul>
+                            <li class="technology">
+                                <a href="technology.html">科技魅力</a>
+                                <p>以信息技术为中心的当代科技革命在全球蓬勃兴起， 标志着人类从工业社会向信息社会的历史性跨越。信息技术包括微电子技术、 光电子技术、计算机技术、通信技术、成像技术、显示技术等。自20世纪90年代以来， 信息技术向数字化、高速化、网络化、集成化和智能化迅速发展。 它的高速发展及其广泛应用， 引导着众多高新技术领域的变革，形成了一幅波澜壮阔的科技创新画面。
+                                </p>
+                                <div class="nb-th">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </li>
+                            <li><a href="music.html">音频分享</a></li>
+                            <img src="./images/music.jpg" alt="">
+                            <p>古代音、乐有别。《礼记·乐记》：“凡音之起，由人心生也。人心之动，物使之然也，感於物而动，故形於声。声相应，故生变，变成方，谓之音。比音而乐之，及干戚、羽旄，谓之乐”。</p>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content-item item3">
+                    <div class="block-list4">
+                        <ul>
+                            <li>博文</li>
+                            <div id="sanf">
+                                <a href="blog.html"><img src="./images/boke.jpg" alt=""></a>
+                            </div>
+                            <li>图片浏览</li>
+                            <div id="sanf">
+                                <a href="photo.html"><img src="./images/photo.jpg" alt=""></a>
+
+                            </div>
+                            <li>
+                                <a href="guestbook.html">访问</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        <p>Copyright&copy;2021&nbsp;BLOG(博客)鄂ICP备</p>
+        <p><span><img src="./images/Security.jpg" alt=""></span><span>联系方式：18460359263</span><span>&nbsp;&nbsp;邮箱：3037502828@qq.com</span></p>
+    </footer>
+    <!-- 返回顶部 -->
+    <a class="goTop" href="#">
+        <span>TOP</span>
+    </a>
+    <script src="./Js/update.js"></script>
+    <script src="./Js/home.js"></script>
+</body>
+
+</html>

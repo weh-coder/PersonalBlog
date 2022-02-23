@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 返回顶部 */
+.goTop {
+  position: fixed;
+  right: 15px;
+  bottom: 75px;
+  height: 29px;
+  width: 68px;
+  border-radius: 3px;
+  background-color: #727272;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.goTop span {
+  padding-left: 14px;
+  background: url(../images/arrow3.png) no-repeat left center;
+}
+
+.goTop:hover {
+  color: #fff;
+  background-color: #05b7fd;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=public.css.map */

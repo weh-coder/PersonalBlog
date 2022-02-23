@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博文</title>
+    <link rel="stylesheet" href="./css/blog.css">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./Js/jquery-1.12.4.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="update">
+            <div class="loadbox"> <img src="./images/loading.gif"> 页面加载中... </div>
+        </div>
+        <!-- 左边内容 -->
+        <div id="left" class="left">
+            <div id="logoDiv" class="logoDiv">
+                <div class="head-item menu-item" href="#one" data-toggle="tab">
+                    博文
+                    <div id="logoHeader" title="博文头像"></div>
+                </div>
+            </div>
+            <div class="menu-title">
+                <a href="https://blog.csdn.net/IT_WEH_coder">CSDN</a>
+            </div>
+            <div class="menu-item" href="#two" data-toggle="tab">
+                博文发布
+            </div>
+            <div class="menu-title">
+                数据观星
+            </div>
+            <div class="menu-item" href="#three" data-toggle="tab">
+                作品数据
+            </div>
+            <div class="menu-item" href="#four" data-toggle="tab">
+                粉丝数据
+            </div>
+            <div class="menu-title">
+                <a href="https://gitee.com/weh_coder">gitee仓库</a>
+            </div>
+            <div class="menu-item" href="#five" data-toggle="tab">
+                示例
+            </div>
+            <div class="menu-item">
+                <a href="https://blog.csdn.net/rank/list">更多</a>
+            </div>
+            <div id="home" title="返回主页">
+                <div class="logo">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 右边内容 -->
+        <div id="right" class="tab-content right">
+            <div id="one" class="tab-pane active">
+                <div class="lian">
+                    <ul>
+                        <li class="blog1">
+                            <img src="./images/blog1.jpg" alt="">
+                        </li>
+                        <li class="blog2">
+                            <img src="./images/blog2.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="two" class="tab-pane">
+                <div class="two-blog">
+                    <div class="two-head">
+                        <img src="./images/blog4.jpg" alt="">
+                    </div>
+                    <div class="two-main">
+                        <img src="./images/blog3.jpg" alt="" class="img1">
+                        <img src="./images/blog5.jpg" alt="" class="img2">
+                    </div>
+                </div>
+            </div>
+            <div id="three" class="tab-pane">
+
+                <div class="three-content">
+                    <ul>
+                        <li class="blog6">
+                            <img src="./images/blog6.jpg" alt="">
+                        </li>
+                        <li class="blog7">
+                            <img src="./images/blog7.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="four" class="tab-pane">
+                <div class="four-content">
+                    <ul>
+                        <li class="blog8">
+                            <img src="./images/blog8.jpg" alt="">
+                        </li>
+                        <li class="blog9">
+                            <img src="./images/blog9.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="five" class="tab-pane">
+                <div class="five-content">
+                    <ul>
+                        <li class="gitee1">
+                            <img src="./images/gitee1.jpg" alt="">
+                        </li>
+                        <li class="gitee2">
+                            <img src="./images/gitee2.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <a class="goTop" href="#">
+        <span>TOP</span>
+    </a>
+    <script src="./Js/update.js"></script>
+    <script src="./Js/study.js"></script>
+    <script>
+        var home = document.getElementById('home');
+        home.addEventListener('click', function() {
+            location.replace('home.html');
+        });
+    </script>
+</body>
+
+
+</html>

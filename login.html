@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客登录界面</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/public.css">
+</head>
+
+<body>
+    <div id="left-log">
+        <div class="img1"></div>
+        <div class="img2"></div>
+    </div>
+    <div id="mid-load">
+        <div class="login">
+            <h2>用户登录</h2>
+            <div class="login_box">
+                <!-- required就是不能为空  必须在css效果中有很大的作用 -->
+                <label for="name" id="name-label">用户名</label>
+                <input type="text" name='name' id='name' value="" required maxlength="10" placeholder="请输入用户名">
+            </div>
+            <div class="login_box">
+                <label for="pwd" id="pwd-label">密<span></span>码</label>
+                <input type="password" name='pwd' id='pwd' value="" required maxlength="10" placeholder="请输入密码">
+            </div>
+            <a class="log">
+               登录
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <canvas id="canv"></canvas>
+    <div class="box">
+        <ul class="minbox">
+            <li><img src="./images/C.jfif" alt=""></li>
+            <li><img src="./images/earth.jfif" alt=""></li>
+            <li><img src="./images/Java.jfif" alt=""></li>
+            <li><img src="./images/earth2.jfif" alt=""></li>
+            <li><img src="./images/Js.jfif" alt=""></li>
+            <li><img src="./images/earth3.jfif" alt=""></li>
+        </ul>
+        <ol class="maxbox">
+            <li><img src="./images/C.jfif" alt=""></li>
+            <li><img src="./images/earth.jfif" alt=""></li>
+            <li><img src="./images/Java.jfif" alt=""></li>
+            <li><img src="./images/earth2.jfif" alt=""></li>
+            <li><img src="./images/Js.jfif" alt=""></li>
+            <li><img src="./images/earth3.jfif" alt=""></li>
+        </ol>
+    </div>
+    <footer>
+        <p>Copyright&copy;2021&nbsp;BLOG(博客)鄂ICP备</p>
+        <p><span><img src="./images/Security.jpg" alt=""></span><span>联系方式：18460359263</span><span>&nbsp;|</span><span>&nbsp;邮箱：3037502828@qq.com</span></p>
+    </footer>
+    <script src="./Js/login.js"></script>
+</body>
+
+</html>

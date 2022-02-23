@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学习笔记</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/study.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" media="screen">
+    <script src="./Js/jquery-1.12.4.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="update">
+            <div class="loadbox"> <img src="./images/loading.gif"> 页面加载中... </div>
+        </div>
+        <!-- 左边内容 -->
+        <div id="left" class="left">
+            <div id="logoDiv" class="logoDiv">
+                <div class="head-item menu-item" href="#one" data-toggle="tab">
+                    学习笔记
+                    <div id="logoHeader"></div>
+                </div>
+            </div>
+            <div class="menu-title">html+css3+js</div>
+            <div class="menu-item" href="#two" data-toggle="tab">
+                html
+            </div>
+            <div class="menu-item" href="#three" data-toggle="tab">
+                css3+js
+            </div>
+            <div class="menu-title">Java</div>
+            <div class="menu-item" href="#four" data-toggle="tab">
+                Java基础
+            </div>
+            <div class="menu-item" href="#five" data-toggle="tab">个人笔记</div>
+            <div id="home" title="返回主页">
+                <div class="logo">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 右边内容 -->
+        <div id="right" class="tab-content right">
+            <div id="one" class="tab-pane active">
+                <div class="one-content">
+                    <ul id="lop">
+                        <li class="kid1"><img src="./images/biji1.gif" alt=""></li>
+                        <li class="kid2"><img src="./images/biji2.gif" alt=""></li>
+                        <li class="kid3"><img src="./images/biji3.gif" alt=""></li>
+                        <li class="kid4"><img src="./images/jsbiji.jpg" alt=""></li>
+                    </ul>
+                    <div id="leftlog"></div>
+                    <div id="rightlog"></div>
+                    <ol class="sub">
+                        <li class="current" number="0"></li>
+                        <li number="1"></li>
+                        <li number="2"></li>
+                        <li number="3"></li>
+                    </ol>
+                </div>
+                <div class="lian">
+                    <ul>
+                        <li>html+css3+js</li>
+                        <li>Java基础</li>
+                        <li>个人笔记</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="two" class="tab-pane">
+                <div class="two-content">
+                    <p>（1）学习了常见标签：</p>
+                    <p>（2）标签有种功能。 --超链接、锚链 超链接：href="网址、地址、文件名" title="显示输入的文字" target="">百度href:链接跳转地址。 title：悬停文本。 target:何种窗口打开。 例如： 锚点</p>
+                    <br> 可不用css也可以设计字体样式; 如果未设置face,则是默认为宋体；大小可为负值； 是一个行类块元素标签；</br>
+                    2.font的拓展 font-family 是设置字体的字型 font-color 字体颜色 font-size 大小 font-style：normal；是为正常字体 italic斜体 white-space：nowrap 是为内容不折行；/pre-nowrap 是折行的 font-weight:bold;字体宽度；也可以用数字加粗 text-align:center;文本居中 text-indent：2em;首行缩距 text-decoration:none;无修饰 //underline下划线
+                    line-height:50px;设置行高 padding:0;文本与文本框的距离为0 margin:0;文本框的外间距 border:1px solid red;厚度为1,实线，红色 border-width:10px 20px 30px 40px;(上右下左) border-style:solid/dashed/dotted/double(实线，虚线，点状，双线框) border-color:red green blue gold;(上为红，右绿，下蓝，左金色)
+                    border-bottom-width:10px;底边的宽度为10px border-bottom:10px solid red;底边是10px,实线，红色的文本框
+                    </p>
+                    <p>2.1 文件命名规则 文件名称统一用小写的英文字母、数字和下划线的组合，其中不得包含汉字、空格和特殊字符；命名原则的指导思想一是使得你自己和工作组的每一个成员能够方便的理解每一个文件的意义，二是当我们在文件夹中使用“按名称排例”的命令时，同一种大类的文件能够排列在一起，以便我们查找、修改、替换、计算负载量等等操作。 a. HTML的命名原则 引文件统一使用index.htm index.html index.asp文件名（小写） 各子页命名的原则首先应该以栏目名的英语翻译取单一单词为名称。例如：
+                        关于我们 \ aboutus 信息反馈 \ feedback 产 品 \ product 如果栏目名称多而复杂并不好以英文单词命名，则统一使用该栏目名称拼音或拼音的首字母表示； 每一个目录中应该包含一个缺省的html 文件，文件名统一用index.htm index.html index.asp； b. 图片的命名原则 图片的名称分为头尾两部分，用下划线隔开，头部分表示此图片的大类性质 例如：广告、标志、菜单、按钮等等。 放置在页面顶部的广告、装饰图案等长方形的图片取名：
+                        banner 标志性的图片取名为： logo 在页面上位置不固定并且带有链接的小图片我们取名为 button 在页面上某一个位置连续出现，性质相同的链接栏目的图片我们取名： menu 装饰用的照片我们取名： pic 不带链接表示标题的图片我们取名： title 范例：banner_sohu.gif banner_sina.gif menu_aboutus.gif menu_job.gif title_news.gif logo_police.gif
+                        logo_national.gif pic_people.jpg 鼠标感应效果图片命名规范为"图片名+_+on/off"。 例如：menu1_on.gif menu1_off.gif c. javascript的命名原则 例如：广告条的javascript文件名为 ad.js 弹出窗口的javascript文件名为 pop.js d. 动态语言文件命名原则 以性质_描述，描述可以有多个单词，用“_”隔开，性质一般是该页面得概要。 范例：register_form.asp
+                        register_post.asp topic_lock.asp</p>
+                </div>
+            </div>
+            <div id="three" class="tab-pane">
+                <div class="three-content">
+                    <p>
+                        (1). 开发平台的选择 在 Firefox 上编写CSS, 同时兼容其他浏览器的. 这样做肯定会比在 IE 做好再到别的浏览器兼容来得容易, 因为 IE 对老标准支持还是很不错的, 而 IE 的一些特有功能人家却不支持. 所以推荐以 Firefox 结合 Firebug 扩展作为平台。 (2). CSS Hack 的顺序 使用 Firefox 作为平台, 只要代码写得够标准, 其实要 Hack 的地方不会很多的, IE 以外的浏览器几乎都不会有问题, 所以可以暂时忽略, 顺序如下：Firefox
+                        -> IE6 -> IE7 -> 其他 (3). Hack 的方法 说到方法有两种, 一种是在不同文件中处理, 另一种则是在同一个文件中处理. 其实作用是相同的, 只是出发点不一样而已. 1. 同一文件中处理. 如: id="bgcolor"的控件要在 IE6中显示蓝色, IE7中显示绿色, Firefox等其他浏览器中显示红色。
+                    </p>
+                </div>
+            </div>
+            <div id="four" class="tab-pane">
+                <div class="four-content">
+                    <ul>
+                        <h3>十大经典排序算法</h3>
+                        <li>
+                            排序算法是《数据结构与算法》中最基本的算法之一。 内部排序:数据记录在内存中进行排序 外部排序:因排序的数据很大，一次不能容纳全部的排序记录，在排序过程中需要访问外存.
+
+                        </li>
+                        <li><img src="./images/java11.png" alt=""></li>
+                    </ul>
+                    <ul>冒泡排序
+                        <li>冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢"浮"到数列的顶端。
+                        </li>
+                        <li>算法步骤:比较相邻的元素。如果第一个比第二个大，就交换他们两个。 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。 针对所有的元素重复以上的步骤，除了最后一个。 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="five" class="tab-pane">
+                <div class="five-content">
+                    1.RPC框架：远程过程调用 2.分布式：什么是分布式 (1)由不同功能的应用，在网络当中进行相互的协作，用于处理处理复杂的业务需求。 3.集群：一个过于庞大的目标，单一组件无法实现该功能，由一群组件共同完成。 4.大型项目必然是分布式架构和集群搭建。 5.心跳检测： (1)从节点宕机：如何知道从节点宕机？可以定时向主节点发送消息，汇报我当前这个从节点依然在集群当中存活。如果在一端时间内，从节点没有消息抵达主节点，那么主节点要将从节点从集群当中移除。 (2)主节点宕机：因为一个节点的故障，造成整个集群的瘫痪，那么这种情况，我们称之为单点故障。从节点多次无法请求到主节点，那么这个时候，可以认为主节点宕机。
+                    ①单点故障的解决方案： 1)选举：从所有的从节点当中，选一个作为新的主节点。 2)高可靠模式：准备一个“备胎”主节点。正常情况下，这个节点不处理任何业务，只负责备份主节点的数据。只有在主节点宕机后，会立即启用备份的节点。 3)去中心化：所有的节点都是主节点，也都是从节点。 6.分布式服务管理：服务治理 (1)烟囱式结构：架构复杂，业务繁乱，不利于新项目的孵化。 (2)企业服务总线：服务总线的压力大，要负责调用，要负责信息扭转。会因为雪崩效应，造成整个服务总线的集群集体宕机。
+                    (3)分布式服务治理：服务治理平台只负责进行服务和业务的匹配，不负责数据流转。 ①负载均衡：分配服务的路由规则 1)分均分配 2)均匀随机分配，无饥饿状态 3)绝对公平策略 a.服务治理平台在为业务匹配到服务之后，会同时分配一个识别码给业务调用方，这个识别码在服务平台作为唯一凭证，比如叫任务编号。 b.业务调用方，在获取到服务的地址之后，会携带着请求服务的参数和刚才分配到的任务编号一起交给服务提供方 c.服务提供方在接收到任务编号以后，会向服务治理平台确认当前服务已受理，正在提供服务
+                    d.双方确认后，服务治理平台给服务的路由值+1 e.服务提供方完成服务之后，要向服务治理平台汇报，注销完成的任务 f.业务需求方在接收到服务数据之后，也会想服务治理平台汇报，注销任务 g.平台在接收到双方确认之后，会将服务的路由值-1 7.实现了MyRedis：数据持久化工具 (1)XmlBuilder：只是对xml的解析 (2)DbServer：在xml解析完成的基础上，整合xml解析的功能，提供的服务 (3)在服务的基础上，多个服务组成一个业务。
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <a class="goTop" href="#">
+        <span>TOP</span>
+    </a>
+    <script src="./Js/update.js"></script>
+    <script src="./Js/study.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/music.css" />
+    <title>音频分享</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="update">
+            <div class="loadbox"> <img src="./images/loading.gif"> 页面加载中... </div>
+        </div>
+        <div class="quit">
+            <img src="./images/pren.jfif" alt="" title="返回">
+        </div>
+        <header>
+            <h2>音频分享</h2>
+        </header>
+        <div id="active-map">
+
+            <ul id="lop">
+                <li class="kid1"><img src="./images/wang1.jpg" alt=""></li>
+                <li class="kid2"><img src="./images/wang2.jpg" alt=""></li>
+                <li class="kid3"><img src="./images/wang3.jpg" alt=""></li>
+                <li class="kid4"><img src="./images/wang4.jpg" alt=""></li>
+            </ul>
+            <div id="leftlog"></div>
+            <div id="rightlog"></div>
+            <ol class="sub">
+                <li class="current" number="0"></li>
+                <li number="1"></li>
+                <li number="2"></li>
+                <li number="3"></li>
+            </ol>
+        </div>
+        <div class="music-container" id="music-container">
+            <div class="music-info">
+                <h4 id="title"></h4>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <audio id="audio">
+            <source src="./mp3/dream.mp3" type="audio/mp3">
+        </audio>
+
+            <div class="img-container">
+                <img src="./images/dream.jfif" alt="music-cover" id="cover" />
+            </div>
+
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+                <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+                <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+            </div>
+        </div>
+        <span><a href="https://music.163.com/">更多</a></span>
+    </div>
+    <footer>
+        <p>Copyright&copy;2021&nbsp;BLOG(博客)鄂ICP备</p>
+        <p><span><img src="./images/Security.jpg" alt=""></span><span>联系方式：18460359263</span><span>&nbsp;&nbsp;邮箱：3037502828@qq.com</span></p>
+    </footer>
+    <!-- 返回顶部 -->
+    <a class="goTop" href="#">
+        <span>TOP</span>
+    </a>
+    <script src="./Js/music.js"></script>
+    <script src="./Js/home.js"></script>
+    <script src="./Js/update.js"></script>
+</body>
+</html>

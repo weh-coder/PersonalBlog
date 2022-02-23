@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言</title>
+    <link rel="stylesheet" href="./css/guestbook.css" type="text/css">
+    <link rel="stylesheet" href="./css/public.css">
+</head>
+
+<body>
+    <div id="update">
+        <div class="loadbox"> <img src="./images/loading.gif"> 页面加载中... </div>
+    </div>
+    <div id="main">
+        <div class="quit" title="返回主页">
+            <a href="home.html">返回</a>
+        </div>
+        <div id="list">
+            <table border="1">
+                <tr>
+                    <th colspan="2" id="head">登录</th>
+                </tr>
+                <tr>
+                    <td>用户名：</td>
+                    <td><label for="textfield"></label>
+                        <input name="textfield" id="name" type="text" size="12" maxlength="12" placeholder="请输入您的用户名" /></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><label for="textfield2"></label>
+                        <input name="textfield2" id="pwd" type="password" maxlength="12" minlenth="6" placeholder="请输入不少于6位数密码" /></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td><input type="radio" name="radio" value="radio" />
+                        <label for="radio">男
+                      <input type="radio" name="radio"value="radio2" />
+                    女</label></td>
+                </tr>
+                <tr>
+                    <td>出生年月日：</td>
+                    <td><input type="date" /></td>
+                </tr>
+                <tr>
+                    <td>兴趣爱好：</td>
+                    <td>
+                        <p>
+                            <label>
+                        <input type="checkbox" name="CheckboxGroup1" value="复选框"/>
+                      </label> 体育
+                            <input type="checkbox" name="checkbox" />
+                            <label for="checkbox"></label> 音乐
+                            <input type="checkbox" name="checkbox2" />
+                            <label for="checkbox2"></label> 美术
+
+                            <input type="checkbox" name="checkbox4" />
+                            <label for="checkbox4"></label> 其他
+                        </p>
+                    </td>
+                </tr>
+                <tr id="foot">
+                    <td colspan="2"><input class="submit" id="submit" type="submit" name="button1" value="登录" />
+                        <input class="reset" type="reset" name="button2" value="重置" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <footer>
+        <p>Copyright&copy;2021&nbsp;BLOG(博客)鄂ICP备</p>
+        <p><span><img src="./images/Security.jpg" alt=""></span><span>联系方式：18460359263</span><span>&nbsp;&nbsp;邮箱：3037502828@qq.com</span></p>
+    </footer>
+    <script src="./Js/update.js"></script>
+    <script src="./Js/guestbook.js"></script>
+</body>
+
+</html>
