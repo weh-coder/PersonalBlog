@@ -3,7 +3,7 @@
 
 ### 1.2 开发工具简介
 
- **（1）这里是列表文本Visual Studio Code集成了所有一款现代编辑器所应该具备的特性，包括语法高亮。可定制的热键绑定,括号匹配以及代码片段收集。Microsoft Docs（微软文档）提供了相应的学习教程帮助用户在 Visual Studio Code 中登陆 GitHub。它具有对JavaScript，TypeScript和Node.js的内置支持，并具有丰富的其他语言和运行时扩展的生态系统。** 
+ **（1）Visual Studio Code集成了所有一款现代编辑器所应该具备的特性，包括语法高亮。可定制的热键绑定,括号匹配以及代码片段收集。Microsoft Docs（微软文档）提供了相应的学习教程帮助用户在 Visual Studio Code 中登陆 GitHub。它具有对JavaScript，TypeScript和Node.js的内置支持，并具有丰富的其他语言和运行时扩展的生态系统。** 
 
  **（2）Google Chrome浏览器是由Google开发的一款设计简单、高效的Web浏览工具。Google Chrome支持多标签浏览，每个标签页面都在独立的“沙箱”内运行，在提高安全性的同时，一个标签页面的崩溃也不会导致其他标签页面被关闭。此外，Google Chrome基于更强大的JavaScript V8引擎，这是当前Web浏览器所无法实现的。** 
 
@@ -22,7 +22,3 @@
  **个人空间：其中内页包含博文和图片浏览以及留言访问。引导用户快速选择查找有关个人空间的信息，降低用户时间成本。**
  
  **关于：引导网站访客了解更多有关博客的信息以及版权。** 
-### 2.1 登录界面展示
-![login.html](image.png)
-### 2.2 首页界面展示
-![home.html](%E5%9B%BE%E7%89%871.png)
